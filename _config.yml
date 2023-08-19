@@ -1,7 +1,3 @@
-# Site
-repository: sproogen/resume-theme
-favicon: images/favicon.ico
-
 # Content configuration version
 version: 2
 
@@ -20,61 +16,77 @@ orcid_username: 0000-0003-2411-6924
 
 # Additional icon links
 additional_links:
-- title: itsgoingto.be
-  icon: fas fa-globe
-  url: https://www.itsgoingto.be
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+- title: Google Scholar
+  icon: fas fa-globe #TODO: Font awesome should add Scholar icon soon
+  url: https://scholar.google.com/citations?user=U4P8tO4AAAAJ&hl=en
 
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
 # about_title: About Me
-about_profile_image: images/profile.svg
+about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Hugo. I'm a Postdoc at Vanderbilt University in the department of Psychology and Human Development.
+  Hi, I'm Hugo. I'm a Postdoc at Vanderbilt University in the department of Psychology and Human Development. My research interests ...
 
+# Projects Section
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle
-        title: Measuring audience immersion
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
+      - layout: left
+        title: Audience Immersion
 
+        link: https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-023-00475-0
+        link_text: Hammond et al. (2023), Cognitive Research - Principles and Implications
         description: | # this will include new lines to allow paragraphs
-          ![Correlation between audience heart rate and retrospective engagement](/modern-resume-theme/images/heart_rate_isc.jpg "Heart rate")
-          Here, we show that secondary-task reaction times, and intersubject correlation of heart rate, relate to self-reported engagement scores across several short clips.
+          In this project, we attempt to measure audience immersion in real-time using several continuous physiological and behavioural measures. 
+          This project formed the basis of my [PhD thesis](https://research-information.bris.ac.uk/files/369899169/Final_Copy_2023_06_20_Hammond_H_PhD_Redacted.pdf).
+          Some of these measures we've used include - questionnaires, dual-task reaction times, heart rate, skin conductance, recording people's head and body movements,
+          and most recently *EEG*. 
+
+          - In [Hammond et al. (2023)](https://cognitiveresearchjournal.springeropen.com/articles/10.1186/s41235-023-00475-0), 
+          we show that secondary-task reaction times, and intersubject correlation of heart rate, relate to self-reported engagement scores 
+          across several short clips (figure below).
+          
+          - In [Hammond et al. (in prep)](), we investigate what features of the content are driving audience immersion: low-level audio-visual properties, 
+          or the high-level narrative? Evidence suggests that heart rate synchronises **between** two conditions which only share high-level narrative
+          information, and do not share any low-level features (visual-only with subtitles or audio-only with audio-description). Further, low-level audio-visual
+          saliency only weakly predicts audience heart rate relative to the narrative. Exploratory evidence here suggests that synchrony co-occurs with narratively-important
+          moments - e.g. when a key plot twist is revealed.
 
 
+      - layout: left
+        title: Movies and Moral Understanding
+        #link: 
+        #link_text: 
+        description: | # this will include new lines to allow paragraphs
+          More coming soon... 
 
+      - layout: left
+        title: Metaverse and Virtual Reality
+        #link: 
+        #link_text: 
+        description: | # this will include new lines to allow paragraphs
+          More coming soon...
+
+# Education Section
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: University of Bristol
-        caption: 2015 - 2018
-        sub_title: **BSc**, Psychological Science
-        description: | # this will include new lines to allow paragraphs
-          Add a description...
-        title: University of Bristol
-        caption: 2018 - 2022
-        sub_title: **PhD**, Psychological Science  
+        title: University of Bristol 
+        sub_title: PhD, Psychological Science (2018 - 2022)
+        link: https://research-information.bris.ac.uk/files/369899169/Final_Copy_2023_06_20_Hammond_H_PhD_Redacted.pdf
+        link_text: Thesis - Developing continuous measures of audience immersion
+        description:
+          Supervised by [Professor Iain Gilchrist](https://www.bristol.ac.uk/people/person/Iain-Gilchrist-eb3eeff2-327a-4cc6-986d-4d44321e62bc/) (Psychology)
+          and [Professor David Bull](https://www.bristol.ac.uk/people/person/David-Bull-f53987d8-4d62-431b-8228-2d39f944fbfe/) (Electrical Engineering).
 
+          My PhD was funded by a United Kingdom Research & Inovation (UKRI) Engineering and Physical Sciences Research Council (EPSRC)
+          British Broadcasting Company (BBC) iCase award, and as such I worked in collaboration with [BBC Research and Development](https://www.bbc.co.uk/rd).
 
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
