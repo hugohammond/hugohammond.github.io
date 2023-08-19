@@ -22,7 +22,7 @@ additional_links:
 
 
 # About Section
-# about_title: About Me
+about_title: About 
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   I'm a Postdoc at Vanderbilt University in the department of Psychology and Human Development. 
