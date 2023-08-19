@@ -25,7 +25,7 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, I'm Hugo. I'm a Postdoc at Vanderbilt University in the department of Psychology and Human Development. 
+  I'm a Postdoc at Vanderbilt University in the department of Psychology and Human Development. 
   My research interests include [ADD]...
 
 # Projects Section
